@@ -7,5 +7,7 @@
     course: "Devops"
   tasks:
     - name: Check variables
+      vars: 
+        wish: "Good evening"
       ansible.builtin.debug:
         msg: "Hi {{name}} , {{wish}} , learn {{course}} clearly"
