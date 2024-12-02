@@ -1,0 +1,10 @@
+- name: variables
+  hosts: localhost
+  vars:
+    name: "Sri"
+    wish: "Good Morning"
+    course: "Devops"
+  tasks:
+    - name: Variables play level
+      ansible.builtin.debug:
+        msg: "Hi {{name}} , {{wish}} , learn {{course}} clearly"
