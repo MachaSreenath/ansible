@@ -1,6 +1,14 @@
 192.168.19.45
 192.168.16.43
 
+[localhost]
+localhost
+
+[lcoalhost:vars]
+name="sri"
+wish="good morning"
+course="DevOps"
+
 
 [web]
 3.90.186.1

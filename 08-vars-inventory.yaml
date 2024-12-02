@@ -1,0 +1,8 @@
+- name: variables read from inventory 
+  hosts: localhost
+  tasks: 
+    - name: read variables from inventory
+      ansible.builtin.debug:
+        msg: "Hi {{name}} , {{wish}} learn {{course}} course "
+
+# Here we given variable values in inventory file and our ansible checks automatically in inventory file if variables is not assigned in current playbook.
