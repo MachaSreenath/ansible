@@ -4,3 +4,5 @@
   - name: variables testing without giving variable values 
     ansible.builtin.debug:
       msg: "Hi {{PERSON}}, Good {{WISHES}}"
+
+# Here we are not giving variable values, we can give PERSON and WISHES values at the execution time like --> -e "PERSON=<name> -e "WISHES=<wishes>"
