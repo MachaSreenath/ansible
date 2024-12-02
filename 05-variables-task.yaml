@@ -8,6 +8,6 @@
   tasks:
     - name: Check variables
       vars: 
-        wish: "Good evening"
+        wish: "Good evening" # overrides the wish variable, because it considers in task level defined variable. 
       ansible.builtin.debug:
         msg: "Hi {{name}} , {{wish}} , learn {{course}} clearly"
