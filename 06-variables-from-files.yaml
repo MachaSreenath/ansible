@@ -6,4 +6,4 @@
   tasks:
   - name: read variables from file
     ansible.builtin.debug:
-      msg: "Hi {{name}} , {{wish}} , learn {{course}} clearly"
+      msg: "Hi {{name}}, {{wish}}, learn {{course}} clearly"

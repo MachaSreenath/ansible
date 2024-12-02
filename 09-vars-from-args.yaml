@@ -1,0 +1,6 @@
+- name: variables testing
+  hosts: localhost
+  tasks: 
+  - name: variables testing without giving variable values 
+    ansible.builtin.debug:
+      msg: "Hi {{PERSON}}, Good {{WISHES}}"

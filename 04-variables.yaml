@@ -6,6 +6,6 @@
     wish: "Good Morning"
     course: "Devops"
   tasks:
-    - name: Check variables
-      ansible.builtin.debug:
-        msg: "Hi {{name}} , {{wish}} , learn {{course}} clearly"
+  - name: Check variables
+    ansible.builtin.debug:
+      msg: "Hi {{name}}, {{wish}}, learn {{course}} clearly"
