@@ -1,0 +1,9 @@
+# Read variable values from external file
+- name: variables from files
+  hosts: localhost
+  vars_files:
+  - vars.yml
+  tasks:
+  - name: read variables from file
+    ansible.builtin.debug:
+      msg: "Hi {{name}} , {{wish}} , learn {{course}} clearly"
