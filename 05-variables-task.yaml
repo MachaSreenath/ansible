@@ -1,0 +1,11 @@
+# Task-level variables
+- name: variables from play level
+  hosts: localhost
+  vars:
+    name: "Sri"
+    wish: "Good Morning"
+    course: "Devops"
+  tasks:
+    - name: Check variables
+      ansible.builtin.debug:
+        msg: "Hi {{name}} , {{wish}} , learn {{course}} clearly"
