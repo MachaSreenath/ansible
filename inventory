@@ -5,9 +5,9 @@
 localhost
 
 [lcoalhost:vars]
-name="sri"
-wish="good morning"
-course="DevOps"
+name="Sri"
+wish="Good Morning"
+course="Devops"
 
 
 [web]

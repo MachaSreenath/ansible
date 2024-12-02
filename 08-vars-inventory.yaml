@@ -3,6 +3,6 @@
   tasks: 
     - name: read variables from inventory
       ansible.builtin.debug:
-        msg: "Hi {{name}} , {{wish}} learn {{course}} course "
-
+        msg: "Hi {{name}} , {{wish}} , learn {{course}} clearly"
+        
 # Here we given variable values in inventory file and our ansible checks automatically in inventory file if variables is not assigned in current playbook.
