@@ -1,6 +1,6 @@
 - name: Install and run nginx
   hosts: web
-  become: yes #it will get root access
+  become: yes #it will get root access to install
   tasks:
   - name: Install nginx package
     ansible.builtin.package:
