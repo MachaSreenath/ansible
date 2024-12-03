@@ -1,8 +1,6 @@
-- name: variables
-  hosts: localhost
-  vars_files:
-  - vars.yaml
-  tasks:
-  - name: variable testing
+- name: variable from inventory
+  hosts: web
+  tasks: 
+  - name: from inventory
     ansible.builtin.debug:
-      msg: "Hello, {{ name }}, {{wish}}, learning {{course}}"
+      msg: "Hi {{name}}, {{wish}}, learn {{course}} clearly"
