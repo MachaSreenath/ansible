@@ -4,7 +4,7 @@
 [localhost]
 localhost
 
-[lcoalhost:vars]
+
 name="Sri-inventory"
 wish="Good Morning-inventory"
 course="Devops-inventory"
