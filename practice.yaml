@@ -29,4 +29,6 @@
 #if all variables are given in playbook, inventory, task-level, external file and prompt in CMD then the ansible preferring the order of the following:
 #1. CMD
 #2. Task-level variables
+#3. external file variables (vars.yaml)
+
 
