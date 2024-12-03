@@ -6,16 +6,16 @@
     course: devops-yamlfile
   vars_files:
   - vars.yaml
-  vars_prompt:
-  - name: name
-    prompt: Enter your name
-    private: false
-  - name: wish
-    prompt: Enter your wish
-    private: false
-  - name: course
-    prompt: Enter your course
-    private: false
+  # vars_prompt:
+  # - name: name
+  #   prompt: Enter your name
+  #   private: false
+  # - name: wish
+  #   prompt: Enter your wish
+  #   private: false
+  # - name: course
+  #   prompt: Enter your course
+  #   private: false
   
   tasks:
   - name: Create a new file
@@ -26,9 +26,11 @@
     ansible.builtin.debug:
       msg: "Hi {{name}}, {{wish}}, learn {{course}} clearly"
 
-#if all variables are given in playbook, inventory, task-level, external file and prompt in CMD then the ansible preferring the order of the following:
+#if all variables are given in playbook, inventory, task-level, external file, prompt and in CMD then the ansible preferring the order of the following:
+
 #1. CMD
 #2. Task-level variables
 #3. external file variables (vars.yaml)
+#4. prompt
 
 
