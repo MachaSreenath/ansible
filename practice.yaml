@@ -1,9 +1,10 @@
-- name: print names
+- name: install packages
   hosts: web
   tasks: 
-  - name: print persons 
-    ansible.builtin.debug:
+  - name: installation of packages
+    ansible.builtin.package:
       msg: "hello {{item}}"
     loop:
-    - John
-    - Alice
+    - git
+    - postfix
+    - mysql
