@@ -1,13 +1,6 @@
-- name: prompting variables
+- name: no defining variables
   hosts: web
-  vars_prompt:
-  - name: USERNAME
-    prompt: "Enter your username"
-    private: false
-  - name: PASSWORD
-    prompt: "Enter your password"
-    private: true
   tasks:
-  - name: display 
+  - name: Create a new file
     ansible.builtin.debug:
-      msg: "username is {{ USERNAME }} and password is {{ PASSWORD }}"
+      msg: "Hi {{PERSON}} this is {{COURSE}}"
