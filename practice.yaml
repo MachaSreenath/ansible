@@ -1,6 +1,13 @@
-- name: variable from inventory
-  hosts: localhost
-  tasks: 
-  - name: from inventory
+- name: prompting variables
+  hosts: web
+  vars_prompt:
+  - name: USERNAME
+    prompt: "Enter your username"
+    private: false
+  - name: PASSWORD
+    prompt: "Enter your password"
+    private: true
+  tasks:
+  - name: display 
     ansible.builtin.debug:
-      msg: "Hi {{name}}, {{wish}}, learn {{course}} clearly"
+      msg: "username is {{ USERNAME }} and password is {{ PASSWORD }}"
