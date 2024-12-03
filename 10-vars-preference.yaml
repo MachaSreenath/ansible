@@ -1,9 +1,9 @@
 - name: no defining variables
   hosts: web
-  vars: 
-    name: sri-fromplay
-    wish: goodmorning-fromplay
-    course: devops-fromplay
+  # vars: 
+  #   name: sri-fromplay
+  #   wish: goodmorning-fromplay
+  #   course: devops-fromplay
   # vars_files:
   # - vars.yaml
   # vars_prompt:
@@ -32,5 +32,9 @@
 #2. Task-level variables
 #3. external file variables (vars.yaml)
 #4. prompt
+#5. playbook
+#6. inventory
+#7. roles(will discuss)
+
 
 
