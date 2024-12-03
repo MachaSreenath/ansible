@@ -2,12 +2,14 @@
 192.168.16.43
 
 
-
-[web]
-18.215.159.55
+[lcoalhost:vars]
 name="Sri-inventory"
 wish="Good Morning-inventory"
 course="Devops-inventory"
+
+
+[web]
+18.215.159.55
 
 [catalogue]
 192.168.193.3
