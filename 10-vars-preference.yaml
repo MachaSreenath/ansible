@@ -35,20 +35,3 @@
 #5. playbook
 #6. inventory
 #7. roles(will discuss)
-
-
-
-
-
-
-
-
-- name: no defining variables
-  hosts: web
-  vars:
-  - term: course
-  tasks: 
-  - name: no need
-    
-    ansible.builtin.debug:
-      msg: "hi this is devops{{term}}"
