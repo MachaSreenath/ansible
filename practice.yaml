@@ -17,7 +17,7 @@
   tasks: 
   - name: print datatypes values
     ansible.builtin.debug:
-      msg: "name is {{name}}"
+      msg: "name is {{Name}}"
   - name: print skills
     ansible.builtin.debug:
       msg: "skills are {{Skills | join(',')}}"
