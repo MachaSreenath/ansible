@@ -18,4 +18,4 @@
       msg: "Hello, my name is {{ Name }}"
   - name: print Skills
     ansible.builtin.debug:
-      msg: "My skills are {{ Skills | join(', ') }}"
+      msg: "My skills are {{ Skills }}"
