@@ -1,26 +1,13 @@
-- name: datatypes
+- name: checking roboshop user
   hosts: web
-  vars:
-    Name: sivakumar
-    Skills:
-    - Python
-    - Java
-    - devops
-    - mysql
-    - ansible
-    Experience:
-      Ansible: 4
-      Java: 9
-      devops: 5
-      mysql: 2
-      Python: 6
-  tasks: 
-  - name: print datatypes values
+  become: yes
+  tasks:
+  - name: check user roboshop exists
+    ansible.builtin.command: id roboshop
+    register: user
+    ignore_errors: true
+
+  - name: print value in variable
     ansible.builtin.debug:
-      msg: "name is {{Name}}"
-  - name: print skills
-    ansible.builtin.debug:
-      msg: "skills are {{Skills | join(',')}}"
-  - name: print experience
-    ansible.builtin.debug:
-      msg: "experience is {{Experience  | join(', ')}}"
+      msg: "output is {{user}}"
+  
