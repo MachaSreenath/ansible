@@ -12,7 +12,7 @@
       Python: 2
       Java: 1
       sql: 5
-    Trainer: no
+    Trainer: yes
   tasks: 
   - name: print trainername
     ansible.builtin.debug:
@@ -25,4 +25,4 @@
       msg: "My experience in Ansible is {{ Experience | join(', ') }} years"
   - name: print who is trainer
     ansible.builtin.debug:
-      msg: "i {{Trainer}}"
+      msg: "is he a trainer {{ Trainer | upper }}"
