@@ -1,18 +1,18 @@
 - name: datatypes printing
   hosts: web
   vars: 
-    Name: skumar
-    Skills:
+    Name: sivakumar # key value
+    Skills:  # Skills is a list type
     - ansible
     - python
     - java
     - sql
-    Experience:
+    Experience:  # Experience is a map type,  it contains key-value pairs 
       Ansible: 3
       Python: 2
       Java: 1
       sql: 5
-    Trainer: yes
+    Trainer: yes # boolean type 
   tasks: 
   - name: print trainername
     ansible.builtin.debug:
