@@ -1,21 +1,9 @@
-- name: checking roboshop user
+- name: print names
   hosts: web
-  become: yes
-  tasks:
-  - name: check user roboshop exists
-    ansible.builtin.command: id roboshop
-    register: user
-    ignore_errors: true
-
-  - name: print value in variable
+  tasks: 
+  - name: print persons 
     ansible.builtin.debug:
-      msg: "output is {{user}}"
-
-  - name: print rc value
-    ansible.builtin.debug:
-      msg: "rc value is {{user.rc}}"
-  
-  - name: create user
-    ansible.builtin.user:
-      name: roboshop
-    when: user.rc != 0
+      msg: "hello {{item}}"
+    loop:
+    - John
+    - Alice
