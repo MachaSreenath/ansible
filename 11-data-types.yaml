@@ -12,7 +12,7 @@
       Python: 2
       Java: 1
       sql: 5
-    Trainer: false
+    Trainer: no
   tasks: 
   - name: print trainername
     ansible.builtin.debug:
