@@ -1,5 +1,6 @@
 - name: conditions
   hosts: web
+  become: yes
   tasks: 
   - name: check roboshop user exists 
     ansible.builtin.command: id roboshop
