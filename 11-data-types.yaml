@@ -1,0 +1,21 @@
+- name: datatypes printing
+  hosts: web
+  vars: 
+    Name: skumar
+    Skills:
+    - ansible
+    - python
+    - java
+    - sql
+    Experience:
+      Ansible: 3
+      Python: 2
+      Java: 1
+      sql: 5
+  tasks: 
+  - name: print name
+    ansible.builtin.debug:
+    msg: "Hello, my name is {{ Name }}"
+  - name: print Skills
+    ansible.builtin.debug:
+    msg: "My skills are {{ Skills | join(', ') }}"
