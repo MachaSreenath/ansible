@@ -13,7 +13,7 @@
       Java: 1
       sql: 5
   tasks: 
-  - name: print name
+  - name: print trainername
     ansible.builtin.debug:
     msg: "Hello, my name is {{ Name }}"
   - name: print Skills
