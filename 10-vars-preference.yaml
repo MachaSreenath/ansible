@@ -38,3 +38,17 @@
 
 
 
+
+
+
+
+
+- name: no defining variables
+  hosts: web
+  vars:
+  - term: course
+  tasks: 
+  - name: no need
+    
+    ansible.builtin.debug:
+      msg: "hi this is devops{{term}}"
