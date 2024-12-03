@@ -18,4 +18,7 @@
       msg: "Hello, my name is {{ Name }}"
   - name: print Skills
     ansible.builtin.debug:
-      msg: "My skills are {{ Skills | join('extratext') }}"
+      msg: "My skills are {{ Skills | join(', ') }}"
+  - name: print Experience
+    ansible.builtin.debug:
+      msg: "My experience in Ansible is {{ Experience.Ansible }} years"
