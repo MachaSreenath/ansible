@@ -21,4 +21,4 @@
       msg: "My skills are {{ Skills | join(', ') }}"
   - name: print Experience
     ansible.builtin.debug:
-      msg: "My experience in Ansible is {{ Experience }} years"
+      msg: "My experience in Ansible is {{ Experience | join(', ') }} years"
