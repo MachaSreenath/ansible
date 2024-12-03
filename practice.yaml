@@ -7,5 +7,7 @@
 
   tasks:
   - name: variable testing
+    vars: 
+      name: ibrahim
     ansible.builtin.debug:
       msg: "Hello, {{ name }}, {{wish}}, have a {{awish}}"
