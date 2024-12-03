@@ -1,6 +1,27 @@
 - name: no defining variables
   hosts: web
+  vars: 
+    name: sri-yamlfile
+    wish: goodmorning-yamlfile
+    course: devops-yamlfile
+  vars_files:
+  - vars.yaml
+  vars_prompt:
+  - name: name
+    prompt: Enter your name
+    private: false
+  - name: wish
+    prompt: Enter your wish
+    private: false
+  - name: course
+    prompt: Enter your course
+    private: false
+  
   tasks:
   - name: Create a new file
+    vars:
+      name: ibrahim
+      wish: goodnight
+      course: awsdevops
     ansible.builtin.debug:
-      msg: "Hi {{PERSON}} this is {{COURSE}}"
+      msg: "Hi {{name}}, {{wish}}, learn {{course}} clearly"
