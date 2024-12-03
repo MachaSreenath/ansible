@@ -1,13 +1,8 @@
 - name: variables
   hosts: localhost
-  vars:
-    name: John
-    wish: Morning
-    awish: niceday
-
+  vars_files:
+  - vars.yaml
   tasks:
   - name: variable testing
-    vars: 
-      name: ibrahim
     ansible.builtin.debug:
-      msg: "Hello, {{ name }}, {{wish}}, have a {{awish}}"
+      msg: "Hello, {{ name }}, {{wish}}, learning {{course}}"
