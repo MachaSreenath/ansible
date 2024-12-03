@@ -1,11 +1,11 @@
 - name: no defining variables
   hosts: web
   vars: 
-    name: sri-yamlfile
-    wish: goodmorning-yamlfile
-    course: devops-yamlfile
-  vars_files:
-  - vars.yaml
+    name: sri-fromplay
+    wish: goodmorning-fromplay
+    course: devops-fromplay
+  # vars_files:
+  # - vars.yaml
   # vars_prompt:
   # - name: name
   #   prompt: Enter your name
