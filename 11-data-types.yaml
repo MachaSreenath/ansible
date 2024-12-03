@@ -15,7 +15,7 @@
   tasks: 
   - name: print trainername
     ansible.builtin.debug:
-    msg: "Hello, my name is {{ Name }}"
+      msg: "Hello, my name is {{ Name }}"
   - name: print Skills
     ansible.builtin.debug:
-    msg: "My skills are {{ Skills | join(', ') }}"
+      msg: "My skills are {{ Skills | join(', ') }}"
