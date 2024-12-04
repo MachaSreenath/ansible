@@ -3,10 +3,8 @@
   tasks:
   - name: practicing loops
     ansible.builtin.debug:
-      msg: "Hello, {{item}}"
+      name: "{{'item', 'state' }}"
     loop:
-    - suresh
-    - prakash
-    - ramesh
-    - kumar
-    
+    - {name: 'git', state: 'present'}
+    - {name: 'postfix', state: 'present'}
+    - {name: 'mysql', state: 'present'}
